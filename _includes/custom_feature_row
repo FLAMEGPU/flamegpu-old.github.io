@@ -1,0 +1,76 @@
+{% if include.id %}
+  {% assign custom_feature_row = page[include.id] %}
+{% else %}
+  {% assign custom_feature_row = page.custom_feature_row %}
+{% endif %}
+<div class="custom_feature__wrapper">
+
+  {% for f in custom_feature_row %}
+
+    {% if f.url contains "://" %}
+      {% capture f_url %}{{ f.url }}{% endcapture %}
+    {% else %}
+      {% capture f_url %}{{ f.url | relative_url }}{% endcapture %}
+    {% endif %}
+
+    <div class="custom_feature__item{% if include.type %}--{{ include.type }}{% endif %}">
+      <div class="custom_archive__item">
+        {% if f.image_path %}
+          <div class="custom_archive__item-teaser">
+          {%if f.link %}
+            <a href="{{f.link}}">
+            <img src=
+              {% if f.image_path contains "://" %}
+                "{{ f.image_path }}"
+              {% else %}
+                "{{ f.image_path | relative_url }}"
+              {% endif %}
+            alt="{% if f.alt %}{{ f.alt }}{% endif %}">
+            </a>
+          {%else %}
+            <img src=
+              {% if f.image_path contains "://" %}
+                "{{ f.image_path }}"
+              {% else %}
+                "{{ f.image_path | relative_url }}"
+              {% endif %}
+            alt="{% if f.alt %}{{ f.alt }}{% endif %}">
+          {%endif%}
+            {% if f.image_caption %}
+              <span class="custom_archive__item-caption">{{ f.image_caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+            {% endif %}
+          </div>
+        {% endif %}
+        {%if f.title%}
+        <div class="custom_archive__item-body">
+            <h2 class="custom_archive__item-title">{{ f.title }}</h2>
+
+          {% assign cposts = 0 %}
+          {% assign mposts = 0 %}
+          {% for post in site.posts %}
+            {% if post.categories contains 'news' %}
+              {% if cposts<1 %}
+                <div class="news">
+                <a class="newslink" href="{{ post.url }}">{{ post.title }}</a>
+                <div class="link_content">{{post.content}}
+                <p>Posted {{post.date | date_to_long_string}} by {{post.author}}</p></div>
+                </div>
+                {% assign cposts = cposts | plus:1 %}
+                {% assign mposts = mposts | plus:1 %}
+              {%else%}
+                {% assign mposts = mposts | plus:1 %}
+              {% endif %}   
+            {%endif%}
+          {% endfor %}
+          <p>{%if cposts>0 %}<!--Showing posts: <b>1 - {{cposts}}</b> of <b>{{mposts}}</b>.--> <a href="/newsfeed">View more >></a>{% else %}Error: No posts found{%endif%}</p>
+          </div>
+        {%endif%}
+          {% if f.url %}
+            <p><a href="{{ f_url }}" class="btn {{ f.btn_class }}">{{ f.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
+          {% endif %}
+        
+      </div>
+    </div>
+  {% endfor %}
+
+</div>

@@ -1,0 +1,68 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+.greedy-nav .visible-links {
+	justify-content: flex-start !important;
+}
+
+.about-page {
+	display: flex;
+}
+
+.about {
+	flex: 75%;
+}
+
+.link_content{
+	font-size: 10px;
+}
+.custom_archive__item-body p {
+	margin: 0 !important;
+}
+
+.archive__item-body {
+	text-align:center;
+}
+.feature__wrapper{
+	position:relative!important;
+	padding-bottom:3%!important;
+	}
+.archive__button {
+  position: absolute;
+  top: 90%;
+  width: 30%; height: 20%;
+}
+.archive__item-teaser {
+	border: 1px solid black!important;
+}
+.custom_feature__wrapper{clear:both;margin-bottom:2em;border-bottom:1px solid #f2f3f3}
+.custom_feature__wrapper::after{clear:both;content:"";display:table}
+.custom_feature__item{margin-bottom:2em;font-size:1.25rem}
+@media (min-width: 37.5em){
+	.custom_feature__item{float:left;margin-bottom:0;width:74%}
+	.custom_feature__item:nth-child(2){float:left;margin-bottom:0;width:24%}
+	.custom_feature__item .custom_feature__item-teaser{max-height:200px;overflow:hidden}
+	.feature__item{float:left;margin-bottom:0;margin-right:2.2%!important;width:30%!important}
+	.feature__item .custom_feature__item-teaser{max-height:200px;overflow:hidden}
+	
+}
+@media (max-width: 37.5em) {
+	.archive__button {position:relative;width:100%}
+}
+.custom_archive__item-body {border-top: 1px solid #ccc;
+	border-bottom: 1px solid #999;
+	border-right: 1px solid #999;
+	border-left: 1px solid #ccc;}
+.custom_archive__item-title{
+	margin: 0 0 0 0 !important;
+	background-color:#eeeeee;}
+
+
+@media (min-width: 64em){.wide .custom_archive{padding-right:0}}
+@media (min-width: 80em){.wide .custom_archive{padding-right:0}}
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials

@@ -1,0 +1,19 @@
+main:
+  - title: "About"
+    url: about/
+  - title: "Documentation"
+    url: http://docs.flamegpu.com/en/latest/index.html
+    style: target="_blank"
+  - title: "Downloads"
+    url: downloads/
+  - title: "Tutorial"
+    url: tutorial/
+  - title: "Contact"
+    url: contact/
+  - title: "Newsfeed"
+    url: newsfeed/
+  - title: "Publications"
+    url: publications/
+  - title: "Help"
+    url: help/
+  
