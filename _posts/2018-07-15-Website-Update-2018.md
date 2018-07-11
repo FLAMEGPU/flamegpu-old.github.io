@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Website Update 2018"
-date:   2018-06-15 00:00:00 +0100
+date:   2018-07-15 00:00:00 +0100
 categories: news announcements
 author: James Pyle
 ---

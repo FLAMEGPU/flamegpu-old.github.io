@@ -1,0 +1,3 @@
+---
+permalink: /s2am/
+---

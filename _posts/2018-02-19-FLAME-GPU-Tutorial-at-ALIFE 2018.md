@@ -1,4 +1,5 @@
 ---
+layout: single
 title:  "FLAME GPU Tutorial at ALIFE 2018"
 date:   2018-02-19 10:10:00 +0100
 categories: news announcements

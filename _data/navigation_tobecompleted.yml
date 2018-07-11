@@ -1,0 +1,73 @@
+main:
+  - title: "About"
+    url: about/
+    sub_category: false
+  - title: "Newsfeed"
+    url: newsfeed/
+    sub_category: true
+  - title: "Publications"
+    url: publications/
+    sub_category: true
+  - title: "Support"
+    url: support/
+    sub_category: false
+  - title: "Documentation"
+    url: http://docs.flamegpu.com/en/latest/index.html
+    style: target="_blank"
+    sub_category: true
+  - title: "Tutorial"
+    url: tutorial/
+    sub_category: true
+  - title: "Downloads"
+    url: downloads/
+    sub_category: false
+  - title: "Projects"
+    url: projects/
+    sub_category: false
+  - title: "FLAME GPU 2"
+    url: flamegpu2/
+    sub_category: true
+  - title: "S2AM"
+    url: s2am/
+    sub_category: true
+  - title: "Rate-Setter"
+    url: ratesetter/
+    sub_category: true
+  - title: "Virtual Reality City Simulation"
+    url: vrcity/
+    sub_category: true
+  - title: "TTRIG Road Network Simulation"
+    url: ttrig/
+    sub_category: true
+  - title: "Contact"
+    url: contact/
+    sub_category: false
+
+
+
+    main:
+  - title: "About"
+    url: about/
+    sub_category: false
+  - title: "Documentation"
+    url: http://docs.flamegpu.com/en/latest/index.html
+    style: target="_blank"
+    sub_category: false
+  - title: "Downloads"
+    url: downloads/
+    sub_category: false
+  - title: "Tutorial"
+    url: tutorial/
+    sub_category: false
+  - title: "Contact"
+    url: contact/
+    sub_category: false
+  - title: "Newsfeed"
+    url: newsfeed/
+    sub_category: false
+  - title: "Publications"
+    url: publications/
+    sub_category: false
+  - title: "Help"
+    url: help/
+    sub_category: false

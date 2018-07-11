@@ -1,4 +1,5 @@
 ---
+layout: single
 title:  "FLAME GPU Tutorial at ECAL 2017"
 date:   2017-09-01 12:21:00 +0100
 categories: news announcements
