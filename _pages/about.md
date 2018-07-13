@@ -1,5 +1,7 @@
 ---
 permalink: /about/
+sidebar:
+  nav: "about_side"
 ---
 <div class="about-page">
 	<div class="about">
@@ -15,22 +17,3 @@ permalink: /about/
 			{% include video id="LSoDfG-p6Ik" provider="youtube" %}
 		</div>
 	</div>
-<!--<div class="news">
-	<h4>News and Announcements</h4>
-{% assign cposts = 0 %}
-{% assign mposts = 0 %}
-{% for post in site.posts %}
-	{% if post.categories contains 'news' %}
-		{% if cposts<5 %}
-			<a class="newslink" href="{{ post.url }}">{{ post.title }}</a>
-			<div class="link_content">{{post.content}}</div>
-			<p>Posted {{post.date}} by {{post.author}}</p>
-			{% assign cposts = cposts | plus:1 %}
-			{% assign mposts = mposts | plus:1 %}
-		{%else%}
-			{% assign mposts = mposts | plus:1 %}
-		{% endif %}		
-	{%endif%}
-{% endfor %}
-<p>{%if cposts>0 %}Showing posts: <b>1 - {{cposts}}</b> of <b>{{mposts}}</b>. <a href="/newsfeed">View more >></a>{% else %}Error: No posts found{%endif%}</p>
-</div>-->

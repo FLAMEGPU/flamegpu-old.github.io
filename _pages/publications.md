@@ -1,5 +1,7 @@
 ---
 permalink: /publications/
+sidebar:
+  nav: "about_side"
 ---
 <p><b>Publications About FLAME GPU</b></p>
 <div class="publications" style="font-size: 14px;">

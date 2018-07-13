@@ -1,4 +1,8 @@
 main:
+  - title: "Home"
+    url: /
+    sub_category: false
+    has_sub: false
   - title: "About"
     url: /about/
     sub_category: false
@@ -47,3 +51,34 @@ main:
     url: /contact/
     sub_category: false
     has_sub: false
+
+about_side:
+  - title: "About"
+    url: /about/
+  - title: "Newsfeed"
+    url: /newsfeed/
+  - title: "Publications"
+    url: /publications/
+
+support_side:
+  - title: "Support"
+    url: /support/
+  - title: "Documentation"
+    url: http://docs.flamegpu.com/en/latest/index.html
+    style: target="_blank"
+  - title: "Tutorial"
+    url: /tutorial/
+
+projects_side:
+  - title: "Projects"
+    url: /projects/
+  - title: "FLAME GPU 2"
+    url: /flamegpu2/
+  - title: "S2AM"
+    url: /s2am/
+  - title: "Rate-Setter"
+    url: /ratesetter/
+  - title: "Virtual Reality City Simulation"
+    url: /vrcity/
+  - title: "TTRIG Road Network Simulation"
+    url: /ttrig/

@@ -1,5 +1,7 @@
 ---
 permalink: /tutorial/
+sidebar:
+  nav: "support_side"
 ---
 <p>ALIFE 2018 FLAME GPU Tutorial - July 2018</p>
 <p><b>Welcome to the FLAMEGPU Tutorial!</b></p>

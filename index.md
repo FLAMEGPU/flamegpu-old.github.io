@@ -2,6 +2,16 @@
 layout: splash
 author_profile: false
 
+excerpt: |
+  FLAME GPU (Flexible Large-scale Agent Modelling Environment for Graphics Processing Units) is a high performance Graphics Processing Unit (GPU) extension to the FLAME framework.
+  It provides a mapping between a formal agent specifications with C based scripting and optimised CUDA code. 
+  This includes a number of key ABM building blocks such as multiple agent types, agent communication and birth and death allocation.
+  Latest Version: 1.5
+header:
+  overlay_image: /assets/images/flamegpu_example.png
+  cta_label: "Download Now"
+  cta_url: "https://github.com/FLAMEGPU/FLAMEGPU/"
+
 custom_feature_row:
 - image_path: /assets/images/flamegpu_logo.jpg
   alt: "Flexible Large scale agent Modelling for the GPU"
@@ -30,7 +40,7 @@ feature_row2:
   btn_class: "btn--primary"
   url: "http://2018.alife.org/events/tutorial-simulating-complex-systems-with-flame-gpu/"
 ---
-{% include figure image_path="/assets/images/flamegpu_logo.jpg" alt="Flexible Large scale agent Modelling for the GPU" %}
+<!--{% include figure image_path="/assets/images/flamegpu_logo.jpg" alt="Flexible Large scale agent Modelling for the GPU" %}-->
 
 {% include feature_row id="feature_row2" %}
 

@@ -32,20 +32,10 @@
               {% if sub==0 and link.sub_category == true %}
               {% assign sub = 1 %}
                 <div class="masthead__menu-dropdown_content">
-                  <!-- <li class="masthead__menu-sub_item"> -->
-              {% endif %}
-
-              <!-- {% if sub==1 and link.sub_category == true %}
-                <li class="masthead__menu-sub_item">
-              {% endif %} -->
-
-              <!-- {% if link.sub_category == false %}
-                <li class="masthead__menu-item">
-              {% endif %} -->
-            
+                  
+              {% endif %}            
             
                 <a href="{{ domain }}{{ link.url }}" {%if link.style %}{{link.style}}{% endif %} {% if link.description %}title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
-              <!-- </li> -->
               {% if link.sub_category == false %}
                 {% assign sub = 0 %}
               {% endif %}

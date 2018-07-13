@@ -3,15 +3,22 @@
 ---
 
 @charset "utf-8";
+body {
+	font-family: "Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif !important;
+}
 
 .greedy-nav .visible-links {
 	justify-content: flex-start !important;
 }
 
+.pagination--pager {
+	width: 30%!important;
+}
+
 .visible-links .masthead__menu-dropdown {
 	position: relative;
     display: inline-block;
-	min-width:18%;
+	min-width:15%;
 	text-align:center;
 }
 
